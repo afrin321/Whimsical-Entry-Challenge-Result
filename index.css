@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    background-color: aliceblue;
+}
+  
+.container {
+    display: flex;
+    width: 100%;
+    height: 100% !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-background {
+    width: 300px !important;
+    height: 300px !important;
+    background-image: linear-gradient(
+        100deg,
+        hsl(280deg 90% 45%) 0%,
+        hsl(279deg 90% 44%) 13%,
+        hsl(279deg 90% 43%) 25%,
+        hsl(279deg 91% 42%) 37%,
+        hsl(279deg 91% 41%) 50%,
+        hsl(279deg 91% 40%) 63%,
+        hsl(279deg 92% 38%) 75%,
+        hsl(279deg 93% 37%) 87%,
+        hsl(279deg 93% 36%) 100%
+        );
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: ease-in 15s;
+}
+
+.logo-background:hover {
+    background-image: linear-gradient(
+  100deg,
+  hsl(280deg 90% 45%) 0%,
+  hsl(279deg 91% 41%) 25%,
+  hsl(279deg 93% 36%) 50%,
+  hsl(265deg 73% 46%) 75%,
+  hsl(255deg 80% 54%) 100%
+);
+}
+
+.square {
+    transition: ease-in-out 10s;
+}
+
+.square-1 {
+    background-color: transparent;
+    border: solid 10px #ecd0f6;
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    rotate: 45deg;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+    left: 7%;
+}
+
+.square-2 {
+    background-color: #ffffff;
+    border: solid 10px #ffffff;
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    rotate: 45deg;
+    border-radius: 5px;
+    z-index: 3;
+    position: relative;
+    right: 7%;
+}
+
+.square:hover {
+    rotate: 180deg;
+}
+
